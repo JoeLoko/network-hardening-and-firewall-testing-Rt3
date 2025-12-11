@@ -29,7 +29,7 @@ Acme United Bank operates a classic segmented architecture:
     • Remote Users connected through a TLS 1.3 + MFA VPN Gateway
     • Honeypot to siphon unauthorized traffic for monitoring
 A diagram of this layout lives here:
-📁 08-network-topology-acme-united-bank.png
+📁 ![Network Topology](screenshots/SS_05-acme-united-bank-network-topology-dmz-vpn-firewalls.png)
 
 ⚠️ 2. Threat Landscape Summary
 Banks live in the blast radius of every major threat actor:
@@ -51,8 +51,8 @@ Before changing anything, I captured:
     • Existing UFW rules
     • System behavior BEFORE rules
     • A Wireshark capture with a clean + dirty traffic mixture
-📁 SS_06-before-firewall-capture-saving-pcap-wireshark
-📁 SS_04-ufw-denyRule-status-numbered-rule-verification
+📁 ![Wireshark Before Firewall](screenshots/SS_06-before-firewall-capture-saving-pcap-wireshark.png)
+📁 ![Baseline Status](screenshots/SS_04-ufw-denyRule-status-numbered-rule-verification.png)
 2. Build a Clean Rule Set
 The firewall model is:
 Default deny inbound. Default allow outbound. No excuses.
@@ -60,7 +60,7 @@ Default deny inbound. Default allow outbound. No excuses.
 Example:
 sudo ufw deny from 142.250.64.0/19 to any
 Screenshot evidence:
-📁 06-ufw-add-deny-rule.png
+📁 ![Wireshark Before Firewall](screenshots/SS_06-before-firewall-capture-saving-pcap-wireshark.png)
 4. Verify Everything With Packet Truth
 Not assumptions. Not hopes.
 5. Document Every Step Like It’s Going to Court
@@ -74,10 +74,10 @@ sudo ufw status numbered | sudo tee ~/ufw_backup_$(date +%F)/ufw_status_before.t
 sudo cp /etc/ufw/user.rules ~/ufw_backup_$(date +%F)/
 sudo cp /etc/ufw/user6.rules ~/ufw_backup_$(date +%F)/
 Screenshots 01–04 show this process:
-📁 01-ufw-backup-validation.png
-📁 02-ufw-status-before-change.png
-📁 03-ufw-rule-files-backup.png
-📁 04-ufw-baseline-status.png
+📁 ![UFW Backup Validation](screenshots/SS_01-ufw-backup-and-enable-validation.png)
+📁 ![UFW Status Before Change](screenshots/SS_02-ufw-post-enable-status-validation.png)
+📁 ![Rule Files Backup](screenshots/SS_03-ufw-add-deny-rule-verification.png)
+📁 ![Baseline Status](screenshots/SS_04-ufw-denyRule-status-numbered-rule-verification.png)
 
 🌐 5. Network Diagram
 Visual representation of Acme United Bank’s movement zones:
@@ -101,14 +101,14 @@ This follows NIST SP 800-115 (Technical Guide to Information Security Testing):
     4. Report
 Before Firewall Activation
 Captured ICMP, DNS, ARP, broadcast noise.
-📁 SS_06-before-firewall-capture-saving-pcap-wireshark
+📁 ![Wireshark Before Firewall](screenshots/SS_06-before-firewall-capture-saving-pcap-wireshark.png)
 After Firewall Activation
 Noise dropped. Blocked ranges stopped dancing. Only legitimate traffic moved.
-📁 SS_07-ufw-install-enable-and-initial-deny-rule
+📁 ![UFW Enabled + Initial Deny](screenshots/SS_07-ufw-install-enable-and-initial-deny-rule.png)
 Ping Tests
 Blocked IP ranges = silence.
 Legitimate IPs = rhythm intact.
-📁 SS_08-ufw-baseline-status-and-pre-change-backups
+📁 ![Baseline Status + Pre-change Backups](screenshots/SS_08-ufw-baseline-status-and-pre-change-backups.png)
 
 🏛️ 8. Leadership Briefing Note
 Executives don’t want technical poetry.
